@@ -25,7 +25,9 @@ jobs:
         run: npm run build
 
       - name: Add CNAME file
-        run: echo 'botspace.abino.in' > build/CNAME
+        run: |
+          mkdir -p build
+          echo 'botspace.abino.in' > build/CNAME
 
       - name: Deploy to release branch
         uses: peaceiris/actions-gh-pages@v3
