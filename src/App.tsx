@@ -1,10 +1,12 @@
-import { Button, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
+
 import { theme } from './lib/theme';
+import AutomationBuilder from './features/automation-builder/route/AutomationBuilder';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Button>Hello</Button>
+      <AutomationBuilder />
     </ThemeProvider>
   );
 }
